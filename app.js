@@ -54,6 +54,10 @@ const db = require('./helpers/db.js');
       msg.reply('pong');
     } else if (msg.body == 'good morning') {
       msg.reply('selamat pagi');
+    } else if (msg.body == '!hallo') {
+      msg.reply('Hallo juga Bro :D');
+    } else if (msg.body == '!hy') {
+      msg.reply('Hay ada yang bisa saya bantu :D');
     } else if (msg.body == '!groups') {
       client.getChats().then(chats => {
         const groups = chats.filter(chat => chat.isGroup);
